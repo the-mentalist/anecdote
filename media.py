@@ -1,6 +1,7 @@
 import movie
 import template
 
+# Movie instances
 redemption = movie.Movie(
     "The Shawshank Redemption",
     "https://s-media-cache-ak0.pinimg.com/736x/93/fe/0f/"
@@ -10,14 +11,12 @@ redemption = movie.Movie(
     "finding solace and eventual redemption through acts of common decency.",
     )
 
-dark_song = movie.Movie(
-    "A Dark Song",
-    "http://kaleidoscope-admin.piggy.co.uk/site/assets/files/1726/"
-    "a_dark_song_one_sheet_approved.jpg",
-    "https://www.youtube.com/watch?v=vvQ2ClKbRcU",
-    "Drama: A determined young woman and a damaged occultist risk"
-    " their lives and souls to perform a dangerous ritual that will"
-    " grant them what they want."
+amelie = movie.Movie(
+    "Amelie",
+    "http://www.impawards.com/2001/posters/amelie_ver1.jpg",
+    "https://www.youtube.com/watch?v=HUECWi5pX7o",
+    "Amélie is an innocent and naive girl in Paris with her own sense of "
+    "justice. She decides to help those around her and, along the way, discovers love"
     )
 
 gump = movie.Movie(
@@ -57,6 +56,6 @@ assassins = movie.Movie(
     )
 
 # list of movies
-movies = [redemption, dark_song, gump, la_land, ali_nino, assassins]
+movies = [gump, redemption, amelie, la_land, ali_nino, assassins]
 # render template with list of movies
 template.open_movies_page(movies)

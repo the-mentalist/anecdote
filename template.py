@@ -40,7 +40,18 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            cursor: pointer;
+        }
+        .movie-img:hover {
+            box-shadow: 1px 1px 8px #000000;
+    		-webkit-transition: all 100ms ease-in;
+    		-webkit-transform: scale(1.05);
+    		-ms-transition: all 200ms ease-in;
+    		-ms-transform: scale(1.05);   
+    		-moz-transition: all 200ms ease-in;
+    		-moz-transform: scale(1.05);
+    		transition: all 200ms ease-in;
+    		transform: scale(1.05);
             cursor: pointer;
         }
         .scale-media {
@@ -55,6 +66,13 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .header-quote{
+            font-style: italic;
+            font-family: initial;
+            font-size: medium;
+            padding-top: 2.4%;
+            color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -106,7 +124,8 @@ main_page_content = '''
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header" style="padding-left: 20%;">
+              <p class="header-quote">" Hope is a good thing, maybe the best of things, And no good thing ever dies "</p>
           </div>
         </div>
       </div>
@@ -122,9 +141,9 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h4 style="margin-top: 2%;">{movie_title}</h4>
-    <p style="margin-top: -3%; word-wrap: break-word;">{movie_storyline}</p>
+    <img src="{poster_image_url}" width="220" height="342" class="movie-img">
+    <h4 style="margin-top: 3%;">{movie_title}</h4>
+    <p style="margin-top: -3%; word-wrap: break-word; font-style: italic; font-family: -webkit-pictograph;margin-top:">{movie_storyline}</p>
 </div>
 '''
 
