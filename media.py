@@ -28,8 +28,23 @@ la_land = movie.Movie(
     "https://www.youtube.com/watch?v=0pdqf4P9MB8",
     "A jazz pianist falls for an aspiring actress in Los Angeles."
     )
+
+ali_nino = movie.Movie(
+    "Ali and Nino",
+    "https://trailers.apple.com/trailers/ifcfilms/ali-and-nino/images/poster-large.jpg?lastmod=1",
+    "https://www.youtube.com/watch?v=m8-Imlxsqhc",
+    "Drama/Romance: Love story of a Muslim Azerbaijani boy and Christian Georgian girl in Baku from 1918 to 1920."
+    )
+    
+assassins = movie.Movie(
+    "Assassins Creed",
+    "http://cdn2-www.comingsoon.net/assets/uploads/gallery/assassins-creed-movie/asscreedinternational.jpg",
+    "https://www.youtube.com/watch?v=4haJD6W136c",
+    "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin,"
+    +"he discovers he is a descendant of the secret Assassins society."
+    )
     
 # list of movies
-movies=[redemption, dark_song, gump, la_land]
+movies=[redemption, dark_song, gump, la_land, ali_nino, assassins]
 # render template with list of movies
 template.open_movies_page(movies)
